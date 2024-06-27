@@ -1,0 +1,712 @@
+    /* Geral */
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: helvetica;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    h1, 
+    h3 {
+    color: red; 
+    }
+
+    p {
+        color: darkgray;
+    }
+
+    /* Navbar */
+    .navbar-container {
+        width: 100%;
+        height: 80px;
+        background-color: black;
+        padding: 0 2rem;
+        position: fixed     ;
+
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .logo {
+        width: 80px;
+        margin-top: 15px;
+    }
+
+    .navbar-items {
+        position: absolute;
+        right: 0;
+        height: 80px;
+        line-height: 80px;
+        margin: 0;
+        display: inline-block;
+    }
+
+    .navbar-items li {
+        display: inline-block;
+        text-transform: uppercase;
+        margin-left: 25px;
+    }
+
+    .navbar-items a {
+        color: white;
+        text-decoration: none;
+        transition: 0,5s;
+        font-family: sans-serif
+    }
+
+    .navbar-items a:hover {
+        color: red
+        
+    }
+
+    /* Main Banner */
+    .main-banner {
+        background-image: url("../img/Design\ sem\ nome.png");
+        background-size: cover;
+        background-position: center;
+        padding: 7rem 0;
+    }   
+
+
+    .main-banner H1 {
+        margin: 2px;
+        position: relative; 
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        text-shadow:  black 1px 2px 2px;
+
+    }
+
+    .main-banner h2 {
+        font-size: 40px;
+        text-align: center;
+        color: red;
+        font-family: Verdana;
+        margin: 5px
+    }
+
+    /* primeiro botão */
+    .main-button {
+        background-color: green;
+        color: white;
+        border: 1px solid transparent;
+        width: 350px;
+        height: 50px;
+        font-family: verdana;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 10px;
+        margin: 20px;
+        transition: 0.5s;
+        
+    }
+
+    .main-button:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid transparent;
+    }
+
+    .main-button25 {
+        background-color: green;
+        color: white;
+        border: 1px solid transparent;
+        width: 350px;
+        height: 50px;
+        font-family: verdana;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 10px;
+        margin: 20px;
+        transition: 0.5s;
+        
+    }
+
+    .main-button25:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid transparent;
+    }
+
+    .main-button2 {
+        text-align: center;
+        justify-content: center;
+        padding: 25px;
+    }
+
+    /* Services Benefícios  */
+    .container-services {
+        padding: 5rem 0;
+        display: flex;
+    }
+
+    .container-services ul {
+        flex: 1 1 200px;
+        list-style: none;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .fas {
+        font-size: 60px;
+        margin-bottom: 15px;
+    }
+
+    .container-services p {
+        padding: 5px;
+        color: white;
+        font-size: 25px;
+        font-family: sans-serif
+    }    
+
+    .fa-shield-alt {
+        color: rgb(46, 207, 145);
+    }
+
+    .fa-rocket {
+        color: red
+    }
+
+    .fa-comments {
+        color: orange;
+
+    }
+
+    .container-services p {
+    color: black
+    } 
+    .container-services h3 {
+        color: black;
+        margin-bottom: 25px;
+    }
+
+    /* Prices and Plans */
+
+    .pricing-container {
+        padding-bottom: 5rem;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .pricing-container h2 {
+        font-size: 36px
+    }
+
+    .pricing-container p {
+        font-size: 25px;
+        color: black;
+        margin: 10px;
+        font-size: Verdana;
+    }
+
+    .plans-container {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 50px auto 0;
+        padding: 15;
+    }
+
+    .plan {
+        flex: ;
+        max-width: 275px;
+        margin: 20px 0;
+    }
+
+    .plan ul {
+        padding: 0;
+    }
+
+    .plan li {
+        list-style: none;
+        height: 50px;
+        line-height: 50px;
+        background-color: #e8e9ea;
+        color: #333;
+        padding: 28px
+    }
+
+    .plan .price {
+        width: 180px;
+        height: 50px;
+        border-radius: 60px;    
+        background-color: red;
+        color: #fff;
+        text-align: center;
+        line-height: 3px;
+        margin: 0 auto -35px;
+        font-size: 18px;
+        position: relative;
+        font-family: arial;
+    }
+
+    .plan .plan-name {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        background-color: blacK;
+        padding: 50px 0;
+        margin-top: 5px ;
+    }
+
+    .plan .plan-btn {
+        background-color: green;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+
+    .pricing-edit, .pricing-edit2 {
+        font-family: sans-serif;
+        font-size: 45px;
+        color: black;
+        font-family: verdana;
+    }
+
+    .plan {
+        border: px solid black;
+    }
+
+
+
+    .pricing-container p {
+        font-size: 25px;
+        color: black;
+        margin: 10px;
+        font-size: Verdana;;
+    }
+
+
+
+
+
+    .plan li {
+        list-style: none;
+        height: 62px;
+        line-height: 17px;
+        background-color: #e8e9ea;
+        color: #333;
+    }
+
+
+
+
+
+
+
+
+    .price {    
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+    }
+
+    .plan-btn {
+        font-family: Verdana;
+    }
+
+    .plan .plan-recommended {
+        background-color: red;
+    }
+
+    /* Button Pricing */
+
+
+
+
+    .btn-1 {
+        background-color: green;
+        width: 237px;
+        height: 50px;
+        margin: 10px;
+        font-size: 18px;
+        color: white;
+        border: 1px solid black;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .btn-1:hover {
+    background-color: black;
+    color: white;
+    }
+
+
+    .btn-2 {
+        background-color: green;
+        width: 237px;
+        height: 50px;
+        margin: 10px;
+        font-size: 18px;
+        color: white;
+        border: 1px solid black;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .btn-2:hover {
+    background-color: black;
+    color: white;
+    }
+
+
+    .btn-3 {
+        background-color: green;
+        width: 237px;
+        height: 50px;
+        margin: 10px;
+        font-size: 18px;
+        color: white;
+        border: 1px solid black;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .btn-3:hover {
+    background-color: black;
+    color: white;
+    }
+
+
+    .btn-4 {
+        background-color: green;
+        width: 237px;
+        height: 50px;
+        margin: 10px;
+        font-size: 18px;
+        color: white;
+        border: 1px solid black;
+        transition: 0.5s;
+    }
+
+    .btn-4:hover {
+    background-color: black;
+    color: white;
+    }
+
+
+    /* Aparelhs Compatíveis */
+    .container-aparelhos {
+        background-color: black;
+        height: 1000px;
+    }
+
+    .container-aparelhos h2 {
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        padding: 50px;
+        font-weight: bold;
+    }
+
+    .container-aparelhos p {
+    color: chartreuse; 
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 5px;
+    }
+
+    .container-aparelhos li {
+        color: white;
+        text-align: center;
+    }
+
+    .main-button-55 {
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+    }
+
+    /* Responsividade */
+
+    /* Small Laptop a partir de 1100 px */
+
+    @media (max-width: 1100px) {
+        .plans-container {
+            width: 95%;
+        }
+
+        .plan {
+            margin: 0 5px;
+        }
+    }
+
+    /* Tablets 900px */
+    @media (max-width: 900px) {
+        .main-banner p {
+        
+            padding: 0 6rem;
+        }
+        
+        .main-banner h2 {
+            font-size: 25px;
+        } 
+
+        .navbar-container{
+            text-align: left;
+            
+        }
+
+        .navbar-container h1 {
+            font-size: 15px;
+        }
+
+        .logo {
+            text-align: center;
+            width: 110px;
+            margin-top: 5px;
+        }
+
+        .pricing-edit2 {
+            font-size: 24px;
+        }
+
+        .pricing-container h2 {
+            font-size: 20px;
+        }
+
+        .pricing-container p {
+            font-size: 18px;
+        }
+
+        .container-services p {
+            font-size: 20px;
+            font-family: Arial;
+        }
+
+        .plans-container li {
+            padding: 10px;
+        }
+
+        .container-aparelhos {
+            background-color: black;
+            height: 1050px;
+    }
+
+    }
+
+    /* Celular 576px */
+
+    @media (max-width: 576px) {
+        
+        html, body {
+            overflow-x: hidden;
+        }
+    
+        .main-banner h2 {
+            font-size: 20px;
+        } 
+
+        .main-banner h1 {
+            font-size: 22px;
+        }
+
+        .plans-container {
+        flex-direction: column;
+        width: 100%;
+        }
+        
+        .plan {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .container-aparelhos {
+            background-color: black;
+            height: 1050px;
+        
+    }
+
+        .navbar-container .logo {
+            border-left: 10px;
+        }
+
+        .pricing-container section {
+            align-items: left;
+        }
+        
+        .container-services {
+            padding: 5rem 0;
+            flex-direction: column;
+        }
+
+        .container-aparelhos p {
+            font-size: 15px;
+            padding: ;
+        }
+
+        .container-services {
+            background-color: black;
+        }
+
+        .container-services p {
+            color: white;
+        }
+
+        .container-services h3 {
+            text-transform: uppercase;
+            color: green;
+        }
+
+        .container-services {
+            padding: 50px;
+        }
+
+        .pricing-container {
+            padding: 20px;
+        }
+
+        .pricing-edit2, {
+            font-size: 20px;
+        }
+
+        .pricing-container p {
+        font-size: 25px;
+        padding: 10px;
+        }
+    
+        .navbar-container li {
+            font-size: 12px;
+        }
+
+        
+    }
+
+    /* Celular 576px */
+    @media (max-width: 576px) {
+        
+        .main-button25 {background-color: green;
+        color: white;
+        border: 1px solid transparent;
+        width: 300px;
+        height: 50px;
+        font-family: verdana;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 10px;
+        margin: 20px;
+        transition: 0.5s;
+        }
+
+        .container-aparelhos p {
+            font-size: 13px;
+            padding: 5pxs;
+        }
+
+    .main-button25:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid transparent;
+    }
+
+    .main-button {background-color: green;
+        color: white;
+        border: 1px solid transparent;
+        width: 280px;
+        height: 50px;
+        font-family: verdana;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 10px;
+        margin: 20px;
+        transition: 0.5s;
+        }
+
+    .main-button:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid transparent;
+    }
+
+
+        .container-aparelhos {
+            background-color: black;
+            height: 1040px;
+        }
+
+        .navbar-container li {
+            font-size: 8px;
+        }
+
+        .logo {
+            width: 75px;
+            margin-top: 8px;
+        }
+
+
+        .main-banner {
+            background-image: url("../img/Design\ sem\ nome.png");
+            background-size: cover;
+            background-position: center;
+            padding: 3rem 0;
+        }   
+
+        .pricing-container li {
+            width: 97%;
+        }
+
+        .plan {
+        margin-top: 25px;
+        }
+
+        .navbar-items {
+            display: none;
+        }
+
+        .navbar-container{
+        text-align: center;
+    }
+
+        .logo {
+            width: 95px;
+            margin-top: 8px;
+        }
+
+        .navbar-container {
+            position: absolute;
+        }
+
+        .plan .price {
+            width: 180px;
+            height: 50px;
+            border-radius: 60px;    
+            background-color: red;
+            color: #fff;
+            text-align: center;
+            line-height: 32px;
+            margin: 0 auto -35px;
+            font-size: 18px;
+            position: relative;
+            font-family: arial;
+        }
+
+        .plan li {
+            list-style: none;
+            height: 62px;
+            line-height: 48px;
+            background-color: #e8e9ea;
+            color: #333;
+        }
+
+        .plan .plan-name {
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            background-color: blacK;
+            padding: 45px 0;    
+        }
+    
+        
+    } 
+    
+
